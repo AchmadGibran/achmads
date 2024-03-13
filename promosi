@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACHMADS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .header-marquee {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%; /* Push text off screen */
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            width: calc(33.33% - 40px);
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ACHMADS</h1>
+    <br>
+    <div class="header-marquee">
+        <div class="marquee-text">Selamat Datang di Platform Promosi UMKM Lokal - ACHMADS</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="product">
+        <a href="geprek.html">
+            <img class="hover:grow hover:shadow-lg" src="geprek.png" alt="Geprek Bungsu">
+            <div class="product-info">
+                <p>Geprek Bungsu</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="agro.html">
+            <img class="hover:grow hover:shadow-lg" src="buah.jpg" alt="Agro Buah">
+            <div class="product-info">
+                <p>Agro Buah</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="adelina.html">
+            <img class="hover:grow hover:shadow-lg" src="kue.webp" alt="Adelina Roti dan Kue">
+            <div class="product-info">
+                <p>Adelina Roti dan Kue</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="about-section">
+    <h2>Tentang ACHMADS</h2>
+    <p>ACHMADS adalah platform yang didedikasikan untuk mempromosikan UMKM lokal guna memperluas jangkauan penjualan. Misi kami adalah menyediakan ruang bagi bisnis lokal untuk memamerkan produk dan mencapai audiens yang lebih luas.</p>
+</div>
+
+<footer>
+    &copy; 2024 ACHMADS. All rights reserved.
+</footer>
+
+</body>
+</html>
